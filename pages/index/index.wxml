@@ -1,0 +1,66 @@
+<view> {{ message }} </view>
+
+<view> {{ person.age }} </view>
+
+<button class = "{{ Rec }}" bindtap = "onClick">But</button>
+
+<checkbox checked="{{ false }}"></checkbox>
+
+<checkbox checked="false"></checkbox>
+
+<view>
+  <view wx:for = "{{ todos }}">
+    <checkbox checked="{{item.completed}}" ></checkbox>
+    <text>{{ item.name }}</text>
+  </view>
+</view>
+
+<view bindtap="outClick" style="width:200px;height:200px;background-color: red">
+  <view catchtap="innerClick" style="width:100px;height:100px;background-color:  blue"> <!-- catchtap阻止冒泡 -->
+
+  </view>
+</view>
+
+<button bindtap="onClick" data-name="BBBBB">传参按钮</button>
+
+<input value="{{ message }}" bindinput="inputListener"></input>
+
+<text>{{ message }}</text>
+
+<view>
+
+  <view class="title" bindtap="toggle">
+    切换面板展示
+  </view>
+
+  <view class="content" wx:if="{{show}}">
+    <text>
+      Content1
+      Content2
+      Content3
+    </text>
+  </view>
+
+  <view class="content" hidden="{{!show}}">
+    <text>
+      Content1
+      Content2
+      Content3
+    </text>
+  </view>
+
+</view> 
+
+<icon type="success_no_circle"></icon>
+
+<button loading="true">loading...</button>
+
+<button type="primary">Comfirm</button>
+
+<button type="warn">Cancel</button>
+
+<button bindtap="api1">click me</button>
+
+<button bindtap="api2">click me</button>
+
+<button bindtap="api3">click me</button>

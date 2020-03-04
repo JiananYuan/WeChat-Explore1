@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Home",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "debug": true,
+  "tabBar": {
+    "color": "#444",
+    "selectedColor": "#219bf3",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "Home",
+        "pagePath": "pages/index/index",
+        "iconPath": "image/home-un.png",
+        "selectedIconPath": "image/home.png"
+      },
+      {
+        "text": "Tools",
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/tool-un.png",
+        "selectedIconPath": "image/tool.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap53.json"
+}
